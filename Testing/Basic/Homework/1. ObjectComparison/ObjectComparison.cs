@@ -6,9 +6,9 @@ namespace HomeExercise.Tasks.ObjectComparison;
 
 public class ObjectComparison
 {
-    private Person actualTsar = TsarRegistry.GetCurrentTsar();
+    private readonly Person actualTsar = TsarRegistry.GetCurrentTsar();
 
-    private Person expectedTsar = new Person("Ivan IV The Terrible", 54, 170, 70,
+    private readonly Person expectedTsar = new Person("Ivan IV The Terrible", 54, 170, 70,
         new Person("Vasili III of Russia", 28, 170, 60, null));
 
     [Test]
